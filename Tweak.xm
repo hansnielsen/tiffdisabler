@@ -1,7 +1,8 @@
 #include <substrate.h>
 
-void donothing() {
+int donothing() {
   HBLogDebug(@"Stubbing TIFF init");
+  return 0;
 }
 
 %ctor {
