@@ -7,5 +7,5 @@ int donothing(int arg0, int arg1, int arg2, int arg3) {
 
 %ctor {
   HBLogDebug(@"Disabling TIFF loading");
-  MSHookFunction(MSFindSymbol(NULL, "_initImageTIFF"), (void*)&donothing);
+  MSHookFunction(MSFindSymbol(MSGetImageByName("/System/Library/Frameworks/ImageIO.framework/ImageIO"), "_initImageTIFF"), (void*)&donothing);
 }
