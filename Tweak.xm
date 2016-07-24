@@ -1,6 +1,6 @@
 #include <substrate.h>
 
-int donothing() {
+int donothing(int arg0, int arg1, int arg2, int arg3) {
   HBLogDebug(@"Stubbing TIFF init");
   return 0;
 }
